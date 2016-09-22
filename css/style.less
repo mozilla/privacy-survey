@@ -1,0 +1,42 @@
+html {
+  font-family: "Fira Sans", "Helvetica Neue", "Arial", sans-serif;
+}
+
+body {
+  background: #DDD;
+  padding: 40px;
+}
+
+.page-wrapper {
+  background: white;
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 40px;
+  box-shadow: 0 1px 1px rgba(0,0,0,.15);
+}
+
+
+// Probably want to drop in some media query stuff too... narrow css?
+
+// Animation Example
+
+.animation-example {
+  animation: sampleAnimation .4s ease-out;
+  animation-iteration-count: 3;
+  animation-delay: .5s;
+}
+
+@keyframes sampleAnimation {
+  0% {
+    transform: scale(1.5);
+    opacity: .5;
+  }
+  50%{
+    transform: scale(.7);
+    opacity: .5;
+  }
+  100% {
+    transform: scale(.7);
+    opacity: 0;
+  }
+}
