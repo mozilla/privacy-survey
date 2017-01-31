@@ -33,10 +33,27 @@ header {
 }
 
 
-img {
+img.logo {
   width: 115px;
   display: block;
   margin-bottom: 10px;
+}
+
+img.icon {
+  width: 30px;
+  line-height: 16px;
+  position: relative;
+  top: 7px;
+}
+
+img.icon[src*='burrito'] {
+  transform: rotate(-90deg);
+}
+
+
+img.icon[src*='hand'] {
+  top: 5px;
+  left: -2px;
 }
 
 h1 {
@@ -102,8 +119,16 @@ em {
   color: rgba(0,0,0,.4);
 }
 
+.duration {
+  float: right;
+  width: 65%;
+  line-height: 90%;
+  position: relative;
+  top: 10px;
+}
+
 .duration:before {
-  content: "\2014";
+  // content: "\2014";
 }
 
 .button-wrapper {

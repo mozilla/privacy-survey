@@ -1,9 +1,6 @@
 /* For narrow viewports */
 
 @media all and (max-width: 600px) {
-  body {
-/*    padding: 15px;*/
-  }
 
   ul {
     padding-left: 20px;
@@ -24,8 +21,9 @@
     text-align: center;
   }
 
-
   .duration {
+    float: none;
+    width: auto;
     display: block;
     text-align: center;
     margin-top: 15px;
@@ -34,8 +32,5 @@
   .duration:before {
     content: "";
   }
-
-
 }
-
 
