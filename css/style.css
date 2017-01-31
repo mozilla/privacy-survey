@@ -1,11 +1,6 @@
 html {
   font-family: "Fira Sans", "Helvetica Neue", "Arial", sans-serif;
 }
-
-body {
-  // padding: 40px 40px 100px 40px;
-}
-
 .page-wrapper {
   background: white;
   margin: 0 auto;
@@ -14,111 +9,90 @@ body {
   font-size: 22px;
   padding: 0 50px 80px 50px;
 }
-
 header {
   background: #eb1962;
   padding: 40px 50px 25px 50px;
   margin-bottom: 40px;
-
-  .inner {
-    margin: 0 auto;
-    max-width: 650px;
-    font-family: "Georgia";
-    font-size: 22px;
-  }
-
-  * {
-    color: white;
-  }
 }
-
-
+header .inner {
+  margin: 0 auto;
+  max-width: 650px;
+  font-family: "Georgia";
+  font-size: 22px;
+}
+header * {
+  color: white;
+}
 img.logo {
   width: 115px;
   display: block;
   margin-bottom: 10px;
 }
-
 img.icon {
   width: 30px;
   line-height: 16px;
   position: relative;
   top: 7px;
 }
-
 img.icon[src*='burrito'] {
   transform: rotate(-90deg);
 }
-
-
 img.icon[src*='hand'] {
   top: 5px;
   left: -2px;
 }
-
 h1 {
   font-size: 42px;
   margin: 0 0 5px 0;
 }
-
 a {
   color: #208fc6;
   text-decoration: none;
-
-  &:hover {
-    text-decoration: underline;
-  }
 }
-
+a:hover {
+  text-decoration: underline;
+}
 h2 {
   font-size: 30px;
   margin: 10px 0 15px 0;
   opacity: .5;
   font-style: italic;
 }
-
 strong {
   font-weight: bold;
 }
-
 hr {
   width: 40%;
   margin: 40px 0;
   border: none;
   border-top: solid 2px #ddd;
 }
-
 ul {
   margin: 30px 0 45px 0;
 }
-
-p,li {
-  color: rgba(0,0,0,.6);
+p,
+li {
+  color: rgba(0, 0, 0, 0.6);
   line-height: 150%;
   margin: 0 0 25px 0;
 }
-
 li {
   margin: 0 0 0 0;
   padding: 10px 0;
 }
-
 ul {
   list-style-type: disc;
 }
-
 strong {
   background: #ffec7d;
   padding: 3px 2;
-  color: rgba(0,0,0,.8);
+  color: rgba(0, 0, 0, 0.8);
   font-weight: bold;
 }
-
 em {
   font-style: italic;
-  color: rgba(0,0,0,.4);
+  color: rgba(0, 0, 0, 0.4);
 }
-
 .duration {
   float: right;
   width: 65%;
@@ -126,51 +100,37 @@ em {
   position: relative;
   top: 10px;
 }
-
-.duration:before {
-  // content: "\2014";
-}
-
 .button-wrapper {
   margin: 50px 0;
 }
-
 .button {
   padding: 20px 45px;
   color: white;
   background: #1a8922;
   text-decoration: none;
   display: inline-block;
-
-  &:hover {
-    opacity: .8;
-  }
 }
-
-
+.button:hover {
+  opacity: .8;
+}
 /* For narrow viewports */
-
 @media all and (max-width: 600px) {
-
   ul {
     padding-left: 20px;
   }
-
-  .page-wrapper, header {
+  .page-wrapper,
+  header {
     padding-left: 22px;
     padding-right: 22px;
   }
-
   header {
     padding-top: 20px;
   }
-
   .button {
     width: 100%;
     box-sizing: border-box;
     text-align: center;
   }
-
   .duration {
     float: none;
     width: auto;
@@ -178,9 +138,7 @@ em {
     text-align: center;
     margin-top: 15px;
   }
-
   .duration:before {
     content: "";
   }
 }
-
