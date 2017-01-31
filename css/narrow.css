@@ -1,7 +1,31 @@
 /* For narrow viewports */
 
 @media all and (max-width: 600px) {
-  * {
-    display: none;
+  body {
+    padding: 15px;
   }
+
+  ul {
+    padding-left: 20px;
+  }
+
+  .button {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+
+  .duration {
+    display: block;
+    margin-top: 15px;
+  }
+
+  .duration:before {
+    content: "";
+  }
+
+
 }
+
+
